@@ -1,0 +1,33 @@
+{
+    "version": "6.1.0",
+    "description": "a maintained implementation of ctags",
+    "homepage": "https://github.com/universal-ctags/ctags",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/universal-ctags/ctags-win32/releases/download/v6.1.0/ctags-v6.1.0-x64.zip",
+            "hash": "ED1BDABE977980DB2F5BD8F0A0FA11963F14604B5AF92F31DB26875BF342EFD8"
+        },
+        "32bit": {
+            "url": "https://github.com/universal-ctags/ctags-win32/releases/download/v6.1.0/ctags-v6.1.0-x86.zip",
+            "hash": "3D95B1FE689BE7C414D506BB95400DD9D0E10FEF7975DED01C92036C361DB974"
+        }
+    },
+    "bin": [
+        "ctags.exe",
+        "readtags.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/universal-ctags/ctags-win32"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/universal-ctags/ctags-win32/releases/download/v$version/ctags-v$version-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/universal-ctags/ctags-win32/releases/download/v$version/ctags-v$version-x86.zip"
+            }
+        }
+    }
+}
