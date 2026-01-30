@@ -1,0 +1,37 @@
+{
+    "version": "1.7.15",
+    "description": "A desktop client that supports for multiple LLM providers.",
+    "homepage": "https://cherry-ai.com",
+    "license": "Apache-2.0",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "notes": [
+        "单纯下载安装程序，进行版本管理，请手动前往 $dir 安装。",
+        "extras/cherry-studio 用的便携版本并非真正意义上的便携版，自身实现存在问题导致启动特别慢。",
+        "详见 <https://github.com/CherryHQ/cherry-studio/issues/8512>。"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.15/Cherry-Studio-1.7.15-x64-setup.exe",
+            "hash": "sha256:dab32fca262aa4dc49d1b18a6ce3cec8b886d8aa9e9cd5fbe1ada01c4ec9d5ad"
+        },
+        "arm64": {
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.15/Cherry-Studio-1.7.15-arm64-setup.exe",
+            "hash": "sha256:d186b1a65ecf5e6b14c84d0ec7f997572e5588ba341c2883385e21a0d4df35f1"
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/CherryHQ/cherry-studio"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-x64-setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-arm64-setup.exe"
+            }
+        }
+    }
+}
