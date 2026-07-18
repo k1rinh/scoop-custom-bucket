@@ -1,17 +1,17 @@
 {
-    "version": "0.14.5.1",
+    "version": "0.14.7.1",
     "description": "Another Chromium-based web browser.",
     "homepage": "https://helium.computer/",
     "license": "GPL-3.0, BSD-3-Clause",
     "notes": "Only the installer is provided, please install it manually from $dir.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/imputnet/helium-windows/releases/download/0.14.5.1/helium_0.14.5.1_x64-installer.exe",
-            "hash": "0e7ee2810ea74f4783dc9711f63baf50e4817cc03f5baeb07eece3ce59d3069d"
+            "url": "https://github.com/imputnet/helium-windows/releases/download/0.14.7.1/helium_0.14.7.1_x64-installer.exe",
+            "hash": "8c6fed88c4e30106939b113ea6933b36ab05f38eaadd31df5bce546fd0f01bb0"
         },
         "arm64": {
-            "url": "https://github.com/imputnet/helium-windows/releases/download/0.14.5.1/helium_0.14.5.1_arm64-installer.exe",
-            "hash": "1101293ba36c73a42caac141977e52df08752375e0e3a9ef54e4dcf91ab24fc0"
+            "url": "https://github.com/imputnet/helium-windows/releases/download/0.14.7.1/helium_0.14.7.1_arm64-installer.exe",
+            "hash": "d21ebcbaf3536d98aea8fc9d59022d76e1c2e95f72bb7572226698dc7b63d55a"
         }
     },
     "checkver": {
