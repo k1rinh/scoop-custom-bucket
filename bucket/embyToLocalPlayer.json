@@ -1,5 +1,5 @@
 {
-    "version": "2025.11.13",
+    "version": "2026.07.18",
     "description": "etlp - Emby/Jellyfin 调用外部本地播放器，并回传播放记录。适配 Plex。",
     "homepage": "https://github.com/kjtsune/embyToLocalPlayer",
     "license": "Apache-2.0",
@@ -9,13 +9,11 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kjtsune/embyToLocalPlayer/releases/download/2025.11.13/embyToLocalPlayer.zip",
-            "hash": "sha256:4558855b8d9ac3105a08a83651d261dce2ae67e0e4f9e88797032b36153471d6"
+            "url": "https://github.com/kjtsune/embyToLocalPlayer/releases/download/2026.07.18/embyToLocalPlayer.zip",
+            "hash": "b786f942c4077c89bb94af8f8f160f59054d3cdf3afc70175b05f204603f4fb4"
         }
     },
-    "persist": [
-        "embyToLocalPlayer_config.ini"
-    ],
+    "persist": "embyToLocalPlayer_config.ini",
     "checkver": {
         "github": "https://github.com/kjtsune/embyToLocalPlayer"
     },
